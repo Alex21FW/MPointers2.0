@@ -80,8 +80,6 @@ memory_manager/CMakeFiles/memory_manager.dir/memory_manager.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2.h \
  /usr/include/c++/13/type_traits /usr/include/c++/13/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
  /usr/include/c++/13/bits/new_allocator.h /usr/include/c++/13/new \
@@ -131,28 +129,22 @@ memory_manager/CMakeFiles/memory_manager.dir/memory_manager.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
- /usr/include/x86_64-linux-gnu/bits/select-decl.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/13/bits/std_abs.h /usr/include/c++/13/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/c++/13/cerrno \
- /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/c++/13/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
@@ -199,10 +191,8 @@ memory_manager/CMakeFiles/memory_manager.dir/memory_manager.cpp.o: \
  /usr/local/include/grpcpp/impl/serialization_traits.h \
  /usr/local/include/grpcpp/support/slice.h \
  /usr/local/include/grpcpp/support/string_ref.h /usr/include/string.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/strings.h /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
@@ -265,8 +255,6 @@ memory_manager/CMakeFiles/memory_manager.dir/memory_manager.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/unistd-decl.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
  /usr/local/include/absl/base/log_severity.h \
@@ -477,7 +465,6 @@ memory_manager/CMakeFiles/memory_manager.dir/memory_manager.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/x86_64-linux-gnu/bits/socket2.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/netdb.h \
  /usr/include/rpc/netdb.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
@@ -496,4 +483,122 @@ memory_manager/CMakeFiles/memory_manager.dir/memory_manager.cpp.o: \
  /usr/local/include/grpcpp/passive_listener.h \
  /usr/local/include/grpcpp/security/authorization_policy_provider.h \
  /usr/local/include/grpcpp/server_posix.h \
- /usr/local/include/grpcpp/version_info.h
+ /usr/local/include/grpcpp/version_info.h \
+ /home/alexfeng/Escritorio/Datos\ II/mpointers_proyecto/generated/protos/memory_manager.grpc.pb.h \
+ /home/alexfeng/Escritorio/Datos\ II/mpointers_proyecto/generated/protos/memory_manager.pb.h \
+ /usr/local/include/google/protobuf/runtime_version.h \
+ /usr/local/include/google/protobuf/io/coded_stream.h \
+ /usr/local/include/google/protobuf/endian.h \
+ /usr/local/include/google/protobuf/port_def.inc \
+ /usr/local/include/google/protobuf/port_undef.inc \
+ /usr/local/include/google/protobuf/arena.h \
+ /usr/local/include/absl/base/prefetch.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h \
+ /usr/local/include/absl/utility/internal/if_constexpr.h \
+ /usr/local/include/google/protobuf/arena_align.h \
+ /usr/local/include/google/protobuf/arena_allocation_policy.h \
+ /usr/local/include/google/protobuf/port.h \
+ /usr/local/include/google/protobuf/serial_arena.h \
+ /usr/local/include/google/protobuf/arena_cleanup.h \
+ /usr/local/include/google/protobuf/string_block.h \
+ /usr/local/include/google/protobuf/thread_safe_arena.h \
+ /usr/local/include/google/protobuf/arenaz_sampler.h \
+ /usr/local/include/google/protobuf/arenastring.h \
+ /usr/local/include/google/protobuf/explicitly_constructed.h \
+ /usr/local/include/google/protobuf/generated_message_tctable_decl.h \
+ /usr/local/include/google/protobuf/message_lite.h \
+ /usr/local/include/google/protobuf/internal_visibility.h \
+ /usr/local/include/google/protobuf/metadata_lite.h \
+ /usr/local/include/google/protobuf/parse_context.h \
+ /usr/local/include/google/protobuf/inlined_string_field.h \
+ /usr/local/include/google/protobuf/io/zero_copy_stream.h \
+ /usr/local/include/google/protobuf/stubs/common.h \
+ /usr/local/include/google/protobuf/stubs/platform_macros.h \
+ /usr/local/include/google/protobuf/stubs/port.h /usr/include/byteswap.h \
+ /usr/local/include/google/protobuf/repeated_field.h \
+ /usr/local/include/google/protobuf/generated_enum_util.h \
+ /usr/local/include/google/protobuf/repeated_ptr_field.h \
+ /usr/local/include/google/protobuf/wire_format_lite.h \
+ /usr/local/include/google/protobuf/generated_message_util.h \
+ /usr/local/include/google/protobuf/any.h \
+ /usr/local/include/google/protobuf/has_bits.h \
+ /usr/local/include/google/protobuf/implicit_weak_message.h \
+ /usr/local/include/google/protobuf/generated_message_reflection.h \
+ /usr/local/include/google/protobuf/descriptor.h \
+ /usr/local/include/absl/container/btree_map.h \
+ /usr/local/include/absl/container/internal/btree.h \
+ /usr/local/include/absl/container/internal/common.h \
+ /usr/local/include/absl/container/internal/common_policy_traits.h \
+ /usr/local/include/absl/container/internal/layout.h \
+ /usr/local/include/absl/debugging/internal/demangle.h \
+ /usr/local/include/absl/strings/str_cat.h \
+ /usr/local/include/absl/strings/internal/stringify_sink.h \
+ /usr/local/include/absl/strings/numbers.h \
+ /usr/local/include/absl/container/internal/btree_container.h \
+ /usr/local/include/absl/container/flat_hash_map.h \
+ /usr/local/include/absl/algorithm/container.h \
+ /usr/include/c++/13/numeric /usr/include/c++/13/bits/stl_numeric.h \
+ /usr/include/c++/13/pstl/glue_numeric_defs.h /usr/include/c++/13/random \
+ /usr/include/c++/13/bits/random.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
+ /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/bits/unordered_set.h \
+ /usr/local/include/absl/container/hash_container_defaults.h \
+ /usr/local/include/absl/container/internal/hash_function_defaults.h \
+ /usr/local/include/absl/hash/hash.h \
+ /usr/local/include/absl/hash/internal/hash.h /usr/include/c++/13/ciso646 \
+ /usr/include/c++/13/bitset /usr/include/c++/13/forward_list \
+ /usr/include/c++/13/bits/forward_list.h \
+ /usr/include/c++/13/bits/forward_list.tcc /usr/include/c++/13/set \
+ /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/stl_multiset.h \
+ /usr/local/include/absl/container/fixed_array.h \
+ /usr/local/include/absl/hash/internal/city.h \
+ /usr/local/include/absl/hash/internal/low_level_hash.h \
+ /usr/local/include/absl/container/internal/raw_hash_map.h \
+ /usr/local/include/absl/container/internal/raw_hash_set.h \
+ /usr/local/include/absl/container/internal/hash_policy_traits.h \
+ /usr/local/include/absl/container/internal/hashtable_debug_hooks.h \
+ /usr/local/include/absl/container/internal/hashtablez_sampler.h \
+ /usr/local/include/absl/profiling/internal/sample_recorder.h \
+ /usr/local/include/google/protobuf/descriptor_lite.h \
+ /usr/local/include/google/protobuf/extension_set.h \
+ /usr/local/include/google/protobuf/generated_enum_reflection.h \
+ /usr/local/include/google/protobuf/unknown_field_set.h \
+ /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
+ /usr/local/include/google/protobuf/stubs/callback.h \
+ /usr/local/include/google/protobuf/message.h \
+ /usr/local/include/google/protobuf/map.h \
+ /usr/local/include/google/protobuf/map_type_handler.h \
+ /usr/local/include/google/protobuf/reflection.h \
+ /usr/local/include/grpcpp/generic/async_generic_service.h \
+ /usr/local/include/grpcpp/generic/callback_generic_service.h \
+ /usr/local/include/grpcpp/impl/server_callback_handlers.h \
+ /usr/local/include/grpcpp/support/async_stream.h \
+ /usr/local/include/grpcpp/impl/service_type.h \
+ /usr/local/include/grpcpp/support/async_unary_call.h \
+ /usr/local/include/grpcpp/support/client_callback.h \
+ /usr/local/include/grpcpp/support/method_handler.h \
+ /usr/local/include/grpcpp/support/sync_stream.h \
+ /usr/local/include/grpcpp/impl/proto_utils.h \
+ /usr/local/include/grpc/byte_buffer_reader.h \
+ /usr/local/include/grpcpp/impl/codegen/config_protobuf.h \
+ /usr/local/include/google/protobuf/descriptor.pb.h \
+ /usr/local/include/google/protobuf/descriptor_database.h \
+ /usr/local/include/google/protobuf/util/json_util.h \
+ /usr/local/include/google/protobuf/json/json.h \
+ /usr/local/include/google/protobuf/util/type_resolver.h \
+ /usr/local/include/google/protobuf/any.pb.h \
+ /usr/local/include/google/protobuf/type.pb.h \
+ /usr/local/include/google/protobuf/source_context.pb.h \
+ /usr/local/include/google/protobuf/util/type_resolver_util.h \
+ /usr/local/include/grpcpp/impl/generic_serialize.h \
+ /usr/local/include/grpcpp/support/proto_buffer_reader.h \
+ /usr/local/include/grpcpp/support/proto_buffer_writer.h \
+ /usr/local/include/grpcpp/support/stub_options.h \
+ /usr/local/include/grpcpp/ports_def.inc \
+ /usr/local/include/grpcpp/ports_undef.inc \
+ /home/alexfeng/Escritorio/Datos\ II/mpointers_proyecto/generated/protos/memory_manager.pb.h

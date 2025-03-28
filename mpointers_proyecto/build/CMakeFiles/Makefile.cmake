@@ -128,6 +128,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/proto_files.dir/DependInfo.cmake"
   "memory_manager/CMakeFiles/memory_manager.dir/DependInfo.cmake"
   "mpointers/CMakeFiles/mpointers.dir/DependInfo.cmake"
   "tests/CMakeFiles/linked_list_test.dir/DependInfo.cmake"

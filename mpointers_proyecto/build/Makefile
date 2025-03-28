@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named proto_files
+
+# Build rule for target.
+proto_files: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto_files
+.PHONY : proto_files
+
+# fast build rule for target.
+proto_files/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proto_files.dir/build.make CMakeFiles/proto_files.dir/build
+.PHONY : proto_files/fast
+
+#=============================================================================
 # Target rules for targets named memory_manager
 
 # Build rule for target.
@@ -155,6 +168,54 @@ linked_list_test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/linked_list_test.dir/build.make tests/CMakeFiles/linked_list_test.dir/build
 .PHONY : linked_list_test/fast
 
+generated/protos/memory_manager.grpc.pb.o: generated/protos/memory_manager.grpc.pb.cc.o
+.PHONY : generated/protos/memory_manager.grpc.pb.o
+
+# target to build an object file
+generated/protos/memory_manager.grpc.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proto_files.dir/build.make CMakeFiles/proto_files.dir/generated/protos/memory_manager.grpc.pb.cc.o
+.PHONY : generated/protos/memory_manager.grpc.pb.cc.o
+
+generated/protos/memory_manager.grpc.pb.i: generated/protos/memory_manager.grpc.pb.cc.i
+.PHONY : generated/protos/memory_manager.grpc.pb.i
+
+# target to preprocess a source file
+generated/protos/memory_manager.grpc.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proto_files.dir/build.make CMakeFiles/proto_files.dir/generated/protos/memory_manager.grpc.pb.cc.i
+.PHONY : generated/protos/memory_manager.grpc.pb.cc.i
+
+generated/protos/memory_manager.grpc.pb.s: generated/protos/memory_manager.grpc.pb.cc.s
+.PHONY : generated/protos/memory_manager.grpc.pb.s
+
+# target to generate assembly for a file
+generated/protos/memory_manager.grpc.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proto_files.dir/build.make CMakeFiles/proto_files.dir/generated/protos/memory_manager.grpc.pb.cc.s
+.PHONY : generated/protos/memory_manager.grpc.pb.cc.s
+
+generated/protos/memory_manager.pb.o: generated/protos/memory_manager.pb.cc.o
+.PHONY : generated/protos/memory_manager.pb.o
+
+# target to build an object file
+generated/protos/memory_manager.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proto_files.dir/build.make CMakeFiles/proto_files.dir/generated/protos/memory_manager.pb.cc.o
+.PHONY : generated/protos/memory_manager.pb.cc.o
+
+generated/protos/memory_manager.pb.i: generated/protos/memory_manager.pb.cc.i
+.PHONY : generated/protos/memory_manager.pb.i
+
+# target to preprocess a source file
+generated/protos/memory_manager.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proto_files.dir/build.make CMakeFiles/proto_files.dir/generated/protos/memory_manager.pb.cc.i
+.PHONY : generated/protos/memory_manager.pb.cc.i
+
+generated/protos/memory_manager.pb.s: generated/protos/memory_manager.pb.cc.s
+.PHONY : generated/protos/memory_manager.pb.s
+
+# target to generate assembly for a file
+generated/protos/memory_manager.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proto_files.dir/build.make CMakeFiles/proto_files.dir/generated/protos/memory_manager.pb.cc.s
+.PHONY : generated/protos/memory_manager.pb.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -166,6 +227,13 @@ help:
 	@echo "... linked_list_test"
 	@echo "... memory_manager"
 	@echo "... mpointers"
+	@echo "... proto_files"
+	@echo "... generated/protos/memory_manager.grpc.pb.o"
+	@echo "... generated/protos/memory_manager.grpc.pb.i"
+	@echo "... generated/protos/memory_manager.grpc.pb.s"
+	@echo "... generated/protos/memory_manager.pb.o"
+	@echo "... generated/protos/memory_manager.pb.i"
+	@echo "... generated/protos/memory_manager.pb.s"
 .PHONY : help
 
 

@@ -1,0 +1,59 @@
+// protos/memory_manager.proto
+syntax = "proto3";
+
+package memory_manager;
+
+service MemoryManager {
+    // Crea un bloque de memoria y retorna su ID
+    rpc Create (CreateRequest) returns (CreateReply);
+
+    // Almacena un valor en un bloque de memoria
+    rpc Set (SetRequest) returns (SetReply);
+
+    // Obtiene el valor de un bloque de memoria
+    rpc Get (GetRequest) returns (GetReply);
+
+    // Incrementa el contador de referencias
+    rpc IncreaseRefCount (RefCountRequest) returns (RefCountReply);
+
+    // Decrementa el contador de referencias
+    rpc DecreaseRefCount (RefCountRequest) returns (RefCountReply);
+}
+
+// Mensajes para Create
+message CreateRequest {
+    uint32 size = 1;  // Tamaño del bloque
+    string type = 2;  // Tipo de dato (ej: "int", "float")
+}
+
+message CreateReply {
+    uint32 id = 1;    // ID del bloque creado
+}
+
+// Mensajes para Set
+message SetRequest {
+    uint32 id = 1;
+    bytes value = 2;  // Valor serializado (ej: 4 bytes para un int)
+}
+
+message SetReply {
+    bool success = 1;
+}
+
+// Mensajes para Get
+message GetRequest {
+    uint32 id = 1;
+}
+
+message GetReply {
+    bytes value = 1;  // Valor serializado
+}
+
+// Mensajes para Increase/DecreaseRefCount
+message RefCountRequest {
+    uint32 id = 1;
+}
+
+message RefCountReply {
+    bool success = 1;
+}

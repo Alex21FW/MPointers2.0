@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DCARES_STATICLIB
 
-CXX_INCLUDES = -I"/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/mpointers"
+CXX_INCLUDES = -I"/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/generated/protos" -I"/home/alexfeng/Escritorio/Datos II/mpointers_proyecto" -I"/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/mpointers"
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17
+CXX_FLAGS = 
 

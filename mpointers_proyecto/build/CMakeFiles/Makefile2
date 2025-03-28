@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = "/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build"
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/proto_files.dir/all
 all: memory_manager/all
 all: mpointers/all
 all: tests/all
@@ -75,6 +76,7 @@ preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/proto_files.dir/clean
 clean: memory_manager/clean
 clean: mpointers/clean
 clean: tests/clean
@@ -126,10 +128,36 @@ tests/clean: tests/CMakeFiles/linked_list_test.dir/clean
 .PHONY : tests/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/proto_files.dir
+
+# All Build rule for target.
+CMakeFiles/proto_files.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proto_files.dir/build.make CMakeFiles/proto_files.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proto_files.dir/build.make CMakeFiles/proto_files.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build/CMakeFiles" --progress-num=8,9,10 "Built target proto_files"
+.PHONY : CMakeFiles/proto_files.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/proto_files.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/proto_files.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build/CMakeFiles" 0
+.PHONY : CMakeFiles/proto_files.dir/rule
+
+# Convenience name for target.
+proto_files: CMakeFiles/proto_files.dir/rule
+.PHONY : proto_files
+
+# clean rule for target.
+CMakeFiles/proto_files.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proto_files.dir/build.make CMakeFiles/proto_files.dir/clean
+.PHONY : CMakeFiles/proto_files.dir/clean
+
+#=============================================================================
 # Target rules for target memory_manager/CMakeFiles/memory_manager.dir
 
 # All Build rule for target.
-memory_manager/CMakeFiles/memory_manager.dir/all:
+memory_manager/CMakeFiles/memory_manager.dir/all: CMakeFiles/proto_files.dir/all
 	$(MAKE) $(MAKESILENT) -f memory_manager/CMakeFiles/memory_manager.dir/build.make memory_manager/CMakeFiles/memory_manager.dir/depend
 	$(MAKE) $(MAKESILENT) -f memory_manager/CMakeFiles/memory_manager.dir/build.make memory_manager/CMakeFiles/memory_manager.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build/CMakeFiles" --progress-num=3,4,5 "Built target memory_manager"
@@ -137,7 +165,7 @@ memory_manager/CMakeFiles/memory_manager.dir/all:
 
 # Build rule for subdir invocation for target.
 memory_manager/CMakeFiles/memory_manager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build/CMakeFiles" 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory_manager/CMakeFiles/memory_manager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build/CMakeFiles" 0
 .PHONY : memory_manager/CMakeFiles/memory_manager.dir/rule

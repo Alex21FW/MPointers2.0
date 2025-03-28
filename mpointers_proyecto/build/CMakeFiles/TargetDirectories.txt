@@ -1,3 +1,4 @@
+/home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build/CMakeFiles/proto_files.dir
 /home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build/CMakeFiles/edit_cache.dir
 /home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build/CMakeFiles/rebuild_cache.dir
 /home/alexfeng/Escritorio/Datos II/mpointers_proyecto/build/memory_manager/CMakeFiles/memory_manager.dir

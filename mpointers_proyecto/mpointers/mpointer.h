@@ -1,6 +1,7 @@
 #pragma once
 #include <grpcpp/grpcpp.h>
 #include <string>
+#include "memory_manager.grpc.pb.h"
 
 template <typename T>
 class MPointer {

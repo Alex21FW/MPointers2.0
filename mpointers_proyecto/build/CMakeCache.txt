@@ -22,7 +22,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -230,6 +230,9 @@ gRPC_DIR:PATH=/usr/local/lib/cmake/grpc
 
 //Dependencies for the target
 mpointers_LIB_DEPENDS:STATIC=general;gRPC::grpc++;general;protobuf;
+
+//Dependencies for the target
+proto_files_LIB_DEPENDS:STATIC=general;gRPC::grpc++;general;gRPC::grpc;general;protobuf;
 
 
 ########################
